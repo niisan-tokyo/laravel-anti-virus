@@ -3,11 +3,18 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "illuminate/support": "^8.61"
+        "illuminate/support": "^5.5|6.*|7.*|8.*"
     },
     "autoload": {
         "psr-4": {
             "Niisan\\LaravelAntiVirus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Niisan\\LaravelAntiVirus\\AntiVirusServiceProvider"
+            ]
         }
     }
 }
