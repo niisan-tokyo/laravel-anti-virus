@@ -1,4 +1,5 @@
 <?php
+namespace Niisan\LaravelAntiVirus;
 
 use Illuminate\Support\ServiceProvider;
 use Niisan\LaravelAntiVirus\AntiVirusImpl\ClamdLocal;
@@ -10,14 +11,10 @@ class AntiVirusServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(AntiVirus::class, function () {
-            $driver = config('anti_virus.driver');
-            if ($driver === 'pass') {
+            if ($this->app->environment() === 'testing') {
                 return new Pass;
             }
-
-            if ($driver === 'local') {
-                return new ClamdLocal;
-            }
+            return new ClamdLocal;
         });
     }
 }

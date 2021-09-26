@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Utilities;
+namespace Niisan\LaravelAntiVirus;
 
 use Illuminate\Http\UploadedFile;
 
