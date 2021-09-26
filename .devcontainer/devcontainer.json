@@ -1,0 +1,14 @@
+{
+    "name": "laravel-anti-virus",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "workspace",
+    "workspaceFolder": "/var/www",
+    "settings": {
+        "editor.tabSize": 4
+    },
+	"shutdownAction": "stopCompose",
+	"extensions": [
+		"bmewburn.vscode-intelephense-client",
+		"neilbrayfield.php-docblocker"
+	]
+}
