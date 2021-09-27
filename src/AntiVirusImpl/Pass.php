@@ -2,8 +2,8 @@
 
 namespace Niisan\LaravelAntiVirus\AntiVirusImpl;
 
-use App\Utilities\AntiVirus;
 use Illuminate\Http\UploadedFile;
+use Niisan\LaravelAntiVirus\AntiVirus;
 
 class Pass implements AntiVirus
 {
