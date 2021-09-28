@@ -26,7 +26,7 @@ class AntiVirusServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/anti_virus.php' => config_path('anti_virus.php'),
+            __DIR__.'/config/anti_virus.php' => config_path('anti_virus.php'),
         ]);
     }
 }
